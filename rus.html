@@ -316,11 +316,6 @@
             const sliderValue = document.getElementById('slider-value');
             const soundIcon = document.getElementById('sound-icon');
             const languageIcon = document.getElementById('language-icon');
-
-            slider.addEventListener('mousedown', function(event) {
-                event.preventDefault();
-            });
-
             slider.addEventListener('input', function() {
                 sliderValue.textContent = this.value;
                 count = parseInt(this.value);
